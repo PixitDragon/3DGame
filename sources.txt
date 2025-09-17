@@ -6,3 +6,5 @@ https://polyhaven.com/a/concrete_tile_facade
 https://polyhaven.com/a/wooden_gate
 https://polyhaven.com/a/worn_plaster_wall
 https://polyhaven.com/a/dead_tree_trunk_02
+https://polyhaven.com/a/street_rat
+
