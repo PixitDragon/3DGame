@@ -1,23 +1,24 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ifDeath : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Transform playerTransform;
+
+    void Awake()
     {
-        
+        playerTransform = this.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 playerPosition = transform.position;
+        Vector3 playerPosition = playerTransform.position;
         float yCoord = playerPosition.y;
         //Debug.Log("yCoord is:" + yCoord);
-        if(yCoord<-5){
-            transform.position = new Vector3(0f,3f,0f);
+        if(yCoord < -5){
+            SceneManager.LoadScene("Assets/Scenes/SampleScene.unity");
             Debug.Log("You fell out of the world");
         }
-        
     }
 }
